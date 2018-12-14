@@ -16,6 +16,7 @@ widgets:
 - tagcloud
 - archive
 - recent_posts
+- links
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
@@ -30,8 +31,10 @@ show_count: false
 # Miscellaneous
 google_analytics:
 gauges_analytics:
-favicon: /favicon.png
+favicon: /image/favicon.jpg
 twitter:
 google_plus:
 fb_admins:
 fb_app_id:
+
+

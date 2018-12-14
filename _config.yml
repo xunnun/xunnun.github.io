@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: xiaoyu blog
+subtitle: 好好学习，天天向上。
 description:
 keywords:
-author: John Doe
+author: xunnun
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://sec.wiki
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -81,4 +81,13 @@ deploy:
   type: git
   repository: git@github.com:xunnun/xunnun.github.io.git 
   branch: master
-
+feed:
+    type: atom
+    path: atom.xml
+    limit: 20
+sitemap:
+   path: sitemap.xml
+   #path 表示 Sitemap 的路径. 默认为 sitemap.xml.
+   #
+favicon: /image/favicon.jpg
+disqus_shortname: xunnun
