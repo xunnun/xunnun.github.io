@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://sec.wiki/about/index.html</loc>
+    
+    <lastmod>2018-12-14T08:10:30.007Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://sec.wiki/categories/index.html</loc>
+    
+    <lastmod>2018-12-14T08:09:59.502Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://sec.wiki/tags/index.html</loc>
+    
+    <lastmod>2018-12-14T08:09:21.677Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://sec.wiki/2018/12/14/hello-world/</loc>
+    
+    <lastmod>2018-12-14T07:59:36.950Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://sec.wiki/archives/index.html</loc>
+    
+    <lastmod>2018-12-14T07:50:17.383Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://sec.wiki/2018/12/14/Linux%E5%AE%89%E8%A3%85zsh/</loc>
     
     <lastmod>2018-12-14T03:46:54.560Z</lastmod>
@@ -12,13 +47,6 @@
     <loc>https://sec.wiki/2018/12/14/hexo-%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD%E6%93%8D%E4%BD%9C/</loc>
     
     <lastmod>2018-12-14T03:42:52.873Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sec.wiki/2018/12/14/hello-world/</loc>
-    
-    <lastmod>2018-12-13T18:40:11.548Z</lastmod>
     
   </url>
   
