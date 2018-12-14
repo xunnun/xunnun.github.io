@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sec.wiki/"/>
-  <updated>2018-12-14T03:32:59.292Z</updated>
+  <updated>2018-12-14T03:46:54.560Z</updated>
   <id>https://sec.wiki/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Linux安装zsh</title>
+    <link href="https://sec.wiki/2018/12/14/Linux%E5%AE%89%E8%A3%85zsh/"/>
+    <id>https://sec.wiki/2018/12/14/Linux安装zsh/</id>
+    <published>2018-12-14T03:41:17.000Z</published>
+    <updated>2018-12-14T03:46:54.560Z</updated>
+    
+    <content type="html"><![CDATA[<p>Linux 安装zsh</p><a id="more"></a><h1 id="添加第三方源"><a href="#添加第三方源" class="headerlink" title="添加第三方源"></a>添加第三方源</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install epel-release</span><br><span class="line">sudo rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm</span><br><span class="line">sudo rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org</span><br><span class="line">sudo rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm</span><br></pre></td></tr></table></figure><h1 id="安装zsh"><a href="#安装zsh" class="headerlink" title="安装zsh"></a>安装zsh</h1><p>如果你用 Redhat Linux，执行:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install -y zsh</span><br></pre></td></tr></table></figure></p><p>如果你用 Ubuntu Linux，执行:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install zsh</span><br></pre></td></tr></table></figure></p><h1 id="安装oh-my-zsh"><a href="#安装oh-my-zsh" class="headerlink" title="安装oh my zsh"></a>安装oh my zsh</h1><p>自动安装:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh</span><br></pre></td></tr></table></figure></p><p>手动安装:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh</span><br><span class="line">cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc</span><br></pre></td></tr></table></figure></p><h1 id="更改默认shell"><a href="#更改默认shell" class="headerlink" title="更改默认shell"></a>更改默认shell</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chsh -s /bin/zsh</span><br></pre></td></tr></table></figure><h1 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git clone git://github.com/joelthelion/autojump.git</span><br><span class="line">cd autojump</span><br><span class="line">./install.py</span><br><span class="line">yum install autojump-zsh -y</span><br><span class="line">vi  ~/.zshrc</span><br><span class="line">[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] &amp;&amp; . ~/.autojump/etc/profile.d/autojump.sh</span><br><span class="line">plugins=(git autojump )</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Linux 安装zsh&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="环境配置" scheme="https://sec.wiki/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="Centos" scheme="https://sec.wiki/tags/Centos/"/>
+    
+      <category term="zsh" scheme="https://sec.wiki/tags/zsh/"/>
+    
+  </entry>
+  
+  <entry>
     <title>hexo 博客备份操作</title>
     <link href="https://sec.wiki/2018/12/14/hexo-%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD%E6%93%8D%E4%BD%9C/"/>
     <id>https://sec.wiki/2018/12/14/hexo-博客备份操作/</id>
     <published>2018-12-14T01:32:22.000Z</published>
-    <updated>2018-12-14T03:32:59.292Z</updated>
+    <updated>2018-12-14T03:42:52.873Z</updated>
     
     <content type="html"><![CDATA[<p>通过git分支来进行保存hexo源文件和静态网页。</p><a id="more"></a><h1 id="备份源文件"><a href="#备份源文件" class="headerlink" title="备份源文件"></a>备份源文件</h1><p>github pages 服务以master分支作文静态网页。所以建立新分支进行源文件保存，更改仓库默认分支为新分支，以后丢失或者或机器可以直接git clone。<br>hexo 分支源文件保存,master分支静态网页。<br>建立hexo分支 <code>git checkout -b hexo</code></p><p>建立备份<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &quot;hexo backup&quot;</span><br><span class="line">git remote add origin git@github.com:xunnun/xunnun.github.io.git</span><br><span class="line">git push origin hexo</span><br></pre></td></tr></table></figure></p><h1 id="日常操作"><a href="#日常操作" class="headerlink" title="日常操作"></a>日常操作</h1><p>发布新文章</p><p>保存新文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &apos;hexo backup&apos;</span><br><span class="line">git push origin hexo</span><br></pre></td></tr></table></figure></p><p>发布部署静态网页<br><code>hexo d</code></p><h1 id="文件丢失"><a href="#文件丢失" class="headerlink" title="文件丢失"></a>文件丢失</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:xunnun/xunnun.github.io.git</span><br><span class="line">npm install hexo-cli</span><br><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git</span><br></pre></td></tr></table></figure>]]></content>
     

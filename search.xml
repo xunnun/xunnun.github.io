@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Linux安装zsh]]></title>
+    <url>%2F2018%2F12%2F14%2FLinux%E5%AE%89%E8%A3%85zsh%2F</url>
+    <content type="text"><![CDATA[Linux 安装zsh 添加第三方源1234sudo yum install epel-releasesudo rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpmsudo rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.orgsudo rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm 安装zsh如果你用 Redhat Linux，执行:1sudo yum install -y zsh 如果你用 Ubuntu Linux，执行:1sudo apt-get install zsh 安装oh my zsh自动安装:1wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh 手动安装:12git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zshcp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc 更改默认shell1chsh -s /bin/zsh 安装插件1234567git clone git://github.com/joelthelion/autojump.gitcd autojump./install.pyyum install autojump-zsh -yvi ~/.zshrc[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] &amp;&amp; . ~/.autojump/etc/profile.d/autojump.shplugins=(git autojump )]]></content>
+      <categories>
+        <category>环境配置</category>
+      </categories>
+      <tags>
+        <tag>Centos</tag>
+        <tag>zsh</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[hexo 博客备份操作]]></title>
     <url>%2F2018%2F12%2F14%2Fhexo-%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD%E6%93%8D%E4%BD%9C%2F</url>
     <content type="text"><![CDATA[通过git分支来进行保存hexo源文件和静态网页。 备份源文件github pages 服务以master分支作文静态网页。所以建立新分支进行源文件保存，更改仓库默认分支为新分支，以后丢失或者或机器可以直接git clone。hexo 分支源文件保存,master分支静态网页。建立hexo分支 git checkout -b hexo 建立备份1234git add .git commit -m &quot;hexo backup&quot;git remote add origin git@github.com:xunnun/xunnun.github.io.gitgit push origin hexo 日常操作发布新文章 保存新文件123git add .git commit -m &apos;hexo backup&apos;git push origin hexo 发布部署静态网页hexo d 文件丢失1234git clone git@github.com:xunnun/xunnun.github.io.gitnpm install hexo-clinpm installnpm install hexo-deployer-git]]></content>
