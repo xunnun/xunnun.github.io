@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[hexo 博客备份操作]]></title>
+    <url>%2F2018%2F12%2F14%2Fhexo-%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[通过git分支来进行保存hexo源文件和静态网页。 备份源文件github pages 服务以master分支作文静态网页。所以建立新分支进行源文件保存，更改仓库默认分支为新分支，以后丢失或者或机器可以直接git clone。hexo 分支源文件保存,master分支静态网页。建立hexo分支 git checkout -b hexo 建立备份1234git add .git commit -m &quot;hexo backup&quot;git remote add origin git@github.com:xunnun/xunnun.github.io.gitgit push origin hexo 日常操作发布新文章 保存新文件123git add .git commit -m &apos;hexo backup&apos;git push origin hexo 发布部署静态网页hexo d 文件丢失1234git clone git@github.com:xunnun/xunnun.github.io.gitnpm install hexo-clinpm installnpm install hexo-deployer-git]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>备份</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2018%2F12%2F14%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
