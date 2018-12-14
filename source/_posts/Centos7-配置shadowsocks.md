@@ -113,7 +113,7 @@ journalctl -u shadowsocks.service -f |tee /var/log/shadowsocks.log
 重启(修改配置要重启才生效)：sslocal -c /etc/shadowsocks.json -d restart
 ```
 
-##开机自启
+## 开机自启
 
 /etc/systemd/system/shadowsocks.service
 
